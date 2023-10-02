@@ -4,7 +4,7 @@ import { getAllPitures } from './api/api';
 import { ImageGallary } from './ImageGallery/ImageGallery';
 import { Button } from './Button/Button';
 import { Section } from './App.styled';
-import Modal from './Modal/Modal';
+import { Modal } from './Modal/Modal';
 import { Spinner } from './Loader/Loader';
 
 class App extends Component {
@@ -54,7 +54,7 @@ class App extends Component {
 
   createSearchRequire = searchTextInput => {
     this.setState({
-      searchText: searchTextInput.inputValue,
+      searchText: searchTextInput,
       page: 1,
       pictures: [],
       totalImages: 0,
