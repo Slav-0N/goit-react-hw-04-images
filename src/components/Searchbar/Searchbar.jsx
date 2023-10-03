@@ -6,7 +6,9 @@ const Searchbar = ({ createSearchRequire }) => {
 
   const handleChange = event => {
     const { value } = event.target;
+
     setInputValue(value);
+    console.log(value);
   };
 
   const handleSubmit = event => {
